@@ -24,6 +24,14 @@ and the value `YES`.
 Opt-in to the embedded views preview by adding a boolean property to the app's `Info.plist` file
 with the key `io.flutter.embedded_views_preview` and the value `YES`.
 
+if using http
+key `NSAppTransportSecurity` and under dict key `NSAllowsArbitraryLoads` and the value `YES`
+
+`<key>NSAppTransportSecurity</key>`  
+`<dict>`  
+   `<key>NSAllowsArbitraryLoads</key><true/>`  
+`</dict>`
+
 ## Usage
 Add `webview_flutter` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
